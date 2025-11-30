@@ -90,14 +90,17 @@
     <mat-icon>dashboard</mat-icon> My Impact
   </button>
   <button mat-menu-item routerLink="/seller/dashboard" *ngIf="auth.isSeller()">
-    <mat-icon>storefront</mat-icon> Seller Dashboard
+    <!-- <mat-icon>storefront</mat-icon> Seller Dashboard -->
+     <span style="color:black;"><mat-icon>storefront</mat-icon></span>
+      <span style="color:black;">Seller dashboard</span>
   </button>
   <button mat-menu-item routerLink="/admin" *ngIf="auth.isAdmin()">
     <mat-icon>shield</mat-icon> Admin Panel
   </button>
   <mat-divider></mat-divider>
   <button mat-menu-item (click)="logout()">
-    <mat-icon>logout</mat-icon> Logout
+     <span style="color:black;"><mat-icon>logout</mat-icon></span>
+      <span style="color:black;">Log out</span>
   </button>
 </mat-menu>
 
